@@ -1,6 +1,6 @@
-    @charset "utf-8";
+@charset "utf-8";
 @import url("../icon/iconfont.css");
-@import url("../mui/css/mui.min.css");
+@import url("../mui/css/mui.css");
 body {
     font-family: '΢', Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
@@ -208,7 +208,6 @@ a {
     float: right
 }
 
-
 /* r-banner */
 
 .r-content {
@@ -381,7 +380,6 @@ i {
     font-size: 12px;
 }
 
-
 /* footer */
 
 footer {
@@ -446,6 +444,15 @@ footer {
     font-size: 10px;
     white-space: nowrap;
 }
+.mui-slider-indicator.mui-segmented-control {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    top: 0;
+}
+.mui-r-cp {
+    margin-top: 40px;
+}
 
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
     color: #262626;
@@ -455,6 +462,10 @@ footer {
 
 .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
     color: #b8403b;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #b8403b;
+    border-bottom: 2px solid #b8403b!important;
 }
 
 .r-integral-h img {
@@ -507,8 +518,10 @@ footer {
 }
 
 .r-price-tab img {
-    width: 70%;
+    width: 74%;
+    height: 18px;
 }
+
 
 .r-price-list {
     width: 100%;
@@ -550,7 +563,7 @@ marquee {
 }
 
 .r-voucher ul li:nth-child(2) p {
-    padding-left: 9px;
+    padding-left: 5px;
 }
 
 .icon-huo {
@@ -586,7 +599,7 @@ marquee {
     line-height: 28px;
     font-size: 14px;
     text-align: center;
-    background: url("../img/矩形12@3x.png") no-repeat;
+    background: url("../images/r-imgs/矩形12@3x.png") no-repeat;
     background-size: 105px 26px;
     position: absolute;
     top: -10px;
@@ -698,7 +711,6 @@ marquee {
     font-size: 11px;
 }
 
-
 /* footer */
 
 footer {
@@ -729,7 +741,7 @@ footer {
 }
 
 .two-icon-hb {
-    background: url('../img/tab/红包@3x.png') no-repeat;
+    background: url('../images/imgs/tab/红包@3x.png') no-repeat;
     width: 30px;
     height: 26px;
     background-size: 30px 26px;
@@ -738,7 +750,7 @@ footer {
 }
 
 .two-icon-hq {
-    background: url('../img/tab/优惠券\(1\)-01@3x.png') no-repeat;
+    background: url('../images/imgs/tab/优惠券\(1\)-01@3x.png') no-repeat;
     width: 30px;
     height: 26px;
     background-size: 30px 26px;
@@ -747,7 +759,7 @@ footer {
 }
 
 .two-icon-sc {
-    background: url('../img/tab/商城@3x.png') no-repeat;
+    background: url('../images/imgs/tab/商城@3x.png') no-repeat;
     width: 30px;
     height: 26px;
     background-size: 30px 26px;
@@ -756,7 +768,7 @@ footer {
 }
 
 .two-icon-rd {
-    background: url('../img/tab/热点@3x.png') no-repeat;
+    background: url('../images/imgs/tab/热点@3x.png') no-repeat;
     width: 30px;
     height: 26px;
     background-size: 30px 26px;
@@ -765,7 +777,7 @@ footer {
 }
 
 .two-icon-hy {
-    background: url('../img/tab/会员@3x.png') no-repeat;
+    background: url('../images/imgs/tab/会员@3x.png') no-repeat;
     width: 23px;
     height: 26px;
     background-size: 25px 25px;
@@ -773,9 +785,7 @@ footer {
     margin: 0 auto;
 }
 
-
 /* wq */
-
 
 /* inconfont */
 
@@ -805,7 +815,6 @@ footer {
     content: "\e64c";
 }
 
-
 /* body */
 
 .w-banner {
@@ -825,7 +834,7 @@ footer {
 .w-banner .w-icon {
     padding: 0 0.4rem;
     width: 100%;
-    top: 0;
+    top: 2px;
     position: absolute;
     z-index: 4;
 }
@@ -987,7 +996,6 @@ footer {
     color: #626262;
 }
 
-
 /* footer */
 
 footer {
@@ -1043,7 +1051,6 @@ footer {
 .w-currentColor {
     color: #902126 !important;
 }
-
 
 /* 优惠券 */
 
@@ -1201,7 +1208,6 @@ footer {
     color: #b8403b;
 }
 
-
 /* 红包页面 */
 
 @media screen and (min-width: 320px) {
@@ -1219,7 +1225,7 @@ body {
 .W-myRadPaper {
     width: 100%;
     margin-top: 3rem;
-    height: 3rem;
+    height: 3.2rem;
     background: #fff;
 }
 
@@ -1258,7 +1264,7 @@ body {
 }
 
 .W-myRadPaper .w-itemRight p {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 0.2rem;
     color: #888;
 }
@@ -1282,10 +1288,12 @@ body {
 }
 
 .w-redPaperTitle {
-    width: 10rem;
+    width: 73%;
+    height:18px;
+    margin-bottom: 8px !important;
     margin: 0 auto;
-    /* text-align: center; */
-    margin-bottom: 0.5rem;
+    text-align: center;
+    
 }
 
 .w-redPaperTitle img {
@@ -1293,22 +1301,30 @@ body {
 }
 
 .w-scrollFont {
-    width: 6rem;
+    /* width: 5rem;
     line-height: 0.8rem;
     padding: 0 0.2rem;
     color: #000;
     margin-bottom: 0.2rem;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5) */
+     /* text-align: center; */
+    margin: 0 auto; 
+    
+}
+.w-scrollFont marquee{
+    line-height: 12px;
+    text-align: center
 }
 
 .w-nearRedPaperItem,
 .w-sendRedPaper {
-    margin-bottom: 10px;
-    padding: 0.3rem;
+    margin-bottom: 15px;
+    padding:0.3rem;
     padding-bottom: 0;
+    
     width: 100%;
-    height: 132px;
+    height: 140px;
     border: 1px solid #e8c2c0;
     border-radius: 5px;
 }
@@ -1352,7 +1368,7 @@ body {
     float: left;
     height: 60px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .w-nearRedPaperItem .w-itemMiddle li:last-child {
@@ -1393,8 +1409,8 @@ body {
     font-size: 14px;
     font-weight: 600;
     position: absolute;
-    top: 1.7rem;
-    left: 0.2rem;
+    top: 1.8rem;
+    left: 0.3rem;
 }
 
 .w-nearRedPaperItem .w-itemMiddle li .w-redPaperNum {
@@ -1422,23 +1438,18 @@ body {
 }
 
 .w-nearRedPaperItem .w-itemFooter li {
-    font-size: 12px!important;
-    color: #b8403b;
+    font-size: 12px !important;
+    color: #888;
 }
 
-.w-nearRedPaperItem .w-itemFooter li:first-child span:first-child {
-    padding: 0.2rem 0.2rem 0.15rem 0.2rem;
-    background-color: #fcabaf;
-    /* margin-right: 0.1rem; */
-    font-weight: 600;
-}
+
 
 .w-nearRedPaperItem .w-itemFooter li:nth-child(2) i {
     margin-bottom: 0.2rem;
     display: inline-block;
     padding-top: 0.1rem;
     padding: 0 0.2rem;
-    background: rgba(184, 64, 59, 0.6);
+    background: rgba(184, 64, 59, 0.3);
     color: #fff;
 }
 
@@ -1506,28 +1517,33 @@ body {
 }
 
 .r-cp-c-left img {
-    width: 95px!important;
+    width: 95px !important;
 }
 
 .r-coupon-header {
     height: 40px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    top:0;
+    width: 100%;
     /* border-bottom:1px solid #ccc; */
 }
 
 .r-coupon-header ul {
     overflow: hidden;
-    /* border-bottom:1px solid #ccc;  */
+    border-bottom:1px solid #ccc; 
 }
 
 .r-coupon-header ul li {
-    /* float: left; */
+    float: left;
     box-sizing: border-box;
     padding: 0 20px;
-    /* width: 33.3%; */
-    /* line-height: 40px; */
+    width: 33.3%;
+    line-height: 40px;
     color: #262626;
     font-size: 10px;
-    /* text-align: center */
+    text-align: center
 }
 
 .r-coupon-header ul .active a {
@@ -1543,6 +1559,7 @@ body {
 
 .r-cp-c {
     padding: .7rem;
+    margin-top: 40px;
     padding-bottom: 3rem;
     background-color: #fff;
 }
@@ -1551,7 +1568,7 @@ body {
     border: solid 1px #e8c2c0;
     overflow: hidden;
     margin-bottom: 10px;
-    padding: .5rem .5rem 1.5rem .5rem;
+    padding: .5rem 0rem 1.5rem .5rem;
     position: relative;
 }
 
@@ -1564,7 +1581,10 @@ body {
 }
 
 .r-cp-c-center {
-    margin-left: 10px;
+    margin-left: 6px;
+    width: 70%;
+    float: right;
+    margin-top: -98px;
 }
 
 .r-cp-c-center h5 {
@@ -1580,9 +1600,12 @@ body {
 }
 
 .r-cp-c-center-box {
-    background-color: #fffbec;
+    /* background-color: #fffbec; */
     /* margin-top: 10px; */
     padding: .5rem 0 4px 0;
+    background: url("../images/r-imgs/icon/卡券@3x.png") no-repeat;
+    background-size: 100% 60px;
+    padding-left: 5px;
 }
 
 .r-cp-c-center-box h3 {
@@ -1597,19 +1620,26 @@ body {
     /* padding-top: 8px; */
     padding-top: 4px;
 }
+.r-cp-c-bottom a{
+    color: #999999!important;
+}
+.r-cp-c-bottom span{
+    color: #ff2764!important;
+}
+
 
 .r-cp-c-right-a {
     position: absolute;
     width: 50px;
     text-align: center;
     white-space: normal;
-    bottom: 25px;
+    bottom: 56px;
     border-radius: 5px;
     padding: 1px 10px;
-    right: 0px;
+    right: 8px;
     font-size: 10px;
     background-color: #ff1e36;
-    color: #fff!important;
+    color: #fff !important;
 }
 
 .r-cp-c-bottom {
@@ -1621,7 +1651,9 @@ body {
     margin-top: 10px;
     font-weight: 700;
 }
-
+.r-cp-c-center span{
+    font-size: 10px;
+}
 .r-cp-c-bottom a {
     color: #999999;
 }
@@ -1630,20 +1662,112 @@ body {
     color: #595959;
 }
 
+.banner-ad-r {
+    height: 75px;
+    width: 100%;
+    margin-top: 2.7rem;
+}
+
+.r-place {
+    font-size: 15px !important;
+}
+
+.r-icon-xiala {
+    top: -1px !important;
+}
+
+.banner-ad-r img {
+    height: 75px;
+    width: 100%;
+}
+
+.banner-ad-r {
+    padding-bottom: 3rem;
+}
+
+.r-icon-xiaoxi {
+    font-size: 25px !important;
+}
+
+.banner-ad-box-ul1,
+.banner-ad-box-ul2 {
+    overflow: hidden;
+}
+
+.banner-ad-box-ul1 li,
+.banner-ad-box-ul2 li {
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    height: 50px;
+    padding: 20px 0 85px 0;
+}
+
+.banner-ad-box-ul1 li a span,
+.banner-ad-box-ul2 li a span {
+    color: #999;
+    font-size: 10px;
+}
+
+.banner-ad-box-ul1 li a p,
+.banner-ad-box-ul2 li a p {
+    color: #3f3f3f;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: -8px;
+}
+
+.banner-ad-box-ul1 li img,
+.banner-ad-box-ul2 li img {
+    width: 40px;
+    height: 36px;
+}
+
+.banner-ad-box-ul1 li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul1 li {
+    border-right: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul2 li {
+    border-right: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul1 li:first-child {
+    border-right: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul1 li:nth-child(4) {
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul1 li:nth-child(5),
+.banner-ad-box-ul1 li:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul2 li:first-child {
+    border-right: 1px solid #e5e5e5;
+}
+
+.banner-ad-box-ul2 li {
+    border-bottom: 1px solid #e5e5e5;
+}
 
 /* 媒体查询 */
 
 @media screen and (min-width: 320px) {
-    /* .r-serach-c i{
-        top: .2rem;
-    } */
+
     .r-price {
         margin-top: 3.5rem;
     }
     /* 红包页面 */
     .w-nearRedPaperItem .w-itemMiddle li {
         margin-right: 10px;
-        width: 17%;
+        width: 17.6%;
     }
     .w-itemTitle {
         font-size: 12px;
@@ -1655,16 +1779,45 @@ body {
     .w-couponInfoItemFooter li {
         font-size: 10px;
     }
+    /* iphone4-5-5s-se */
     @media screen and (max-width: 320px) {
         .r-price-c img {
             width: 120px;
         }
+        .r-price-right a{
+            font-size: 10px;
+            display: block;
+            padding: 0 5px;
+        }
+        .r-serach-c{
+            width: 57%;
+        }
+        .icon-xiaoxi{
+            padding-top: 10px;
+        }
+        .r-voucher ul li a p{
+            font-size: 12px;
+        }
+        .r-cp-c-center{
+            margin-left: 6px;
+            margin-right: 10px;
+            width: 70%;
+            float: right;
+            margin-top: 1px;
+            
+        }
+        .r-cp-c-right-a{
+            bottom: 37px;
+            /* width: 0; */
+            right: 13px;
+            width: 44px;
+            white-space: normal;
+        }
+        
         .r-voucher ul li:nth-child(2) p {
             padding-left: 2px;
         }
-        .r-price-right a {
-            display: inline-block
-        }
+       
         .r-price-right {
             right: 0;
             text-align: center;
@@ -1674,7 +1827,9 @@ body {
         }
         .r-price-right a {
             font-weight: normal;
-            padding: 2px;
+        }
+        .r-cp-c-center{
+            width: 180px;
         }
         .r-price-c a {
             right: 26px;
@@ -1696,14 +1851,41 @@ body {
             padding-top: 0;
         }
         .r-cp-c-left img {
-            width: 70px!important;
+            width: 70px !important;
+        }
+        .banner-ad-r {
+            margin-top: 1.5rem;
+        }
+        .banner-ad-box {
+            padding-bottom: 3rem;
+        }
+
+    }
+
+    @media screen and (min-width: 360px) {
+        .banner-ad-box {
+            padding-bottom: 3rem;
+        }
+       
+    }
+    /* iphone6s */
+    @media screen and (max-width: 375px) {
+        .banner-ad-box-ul1 li, .banner-ad-box-ul2 li{
+            padding: 20px 0 76px 0;
         }
     }
+    /* 6splus */
     @media screen and (min-width: 414px) {
-        /* .r-serach-c i{
-        top: .35rem;
-    } */
+        .r-cp-c-center {
+            margin-left: 6px;
+            width: 70%;
+            float: right;
+            margin-top: 0px;
+        }
     }
+
+
+
     /* iphonex */
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
         body {

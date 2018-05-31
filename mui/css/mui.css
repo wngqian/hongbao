@@ -2257,7 +2257,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 }
 .mui-table-view-cell:after
 {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     bottom: 0;
     left: 15px;
@@ -4449,7 +4449,7 @@ body > .mui-progressbar
     position: relative;
     z-index: 1;
 
-    /* overflow: hidden; */
+    overflow: hidden;
 
     width: 100%;
 }
@@ -4459,7 +4459,7 @@ body > .mui-progressbar
 }
 .mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item
 {
-    border-top: 1px solid #c8c7cc;
+    /* border-top: 1px solid #c8c7cc; */
     border-bottom: 1px solid #c8c7cc;
 }
 .mui-slider .mui-slider-group
@@ -4588,15 +4588,16 @@ body > .mui-progressbar
     color: #ff5053;
 }
 
-.mui-slider-progress-bar
+/* .mui-slider-progress-bar
 {
     z-index: 1;
 
-    height: 2px;
+    /* height: 2px; */
 
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-}
+    /* -webkit-transform: translateZ(0);
+            transform: translateZ(0); */
+
+
 
 .mui-switch
 {
