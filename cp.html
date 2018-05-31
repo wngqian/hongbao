@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兑客商城</title>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone = no" />
+    <script src="js/rem.js"></script>
+    <script src="mui/js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<style>
+    .mui-control-content {
+        background-color: white;
+        min-height: 215px;
+    }
+
+    .mui-control-content .mui-loading {
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <div class="r-conent">
+        <div class="r-coupon-header">
+            <!-- <ul>
+                <li class="active">
+                    <a href="#">未使用(7)</a>
+                </li>
+                <li>
+                    <a href="#">已使用(0)</a>
+                </li>
+                <li>
+                    <a href="#">已过期(0)</a>
+                </li>
+            </ul> -->
+            <div class="mui-content">
+                <div id="slider" class="mui-slider">
+                    <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                        <a class="mui-control-item mui-active" href="#item1mobile">
+                            未使用(7)
+                        </a>
+                        <a class="mui-control-item" href="#item2mobile">
+                            已使用(0)
+                        </a>
+                        <a class="mui-control-item" href="#item3mobile">
+                            已过期(0)
+                        </a>
+                    </div>
+                    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+                    <div class="mui-slider-group">
+                        <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                            <div id="scroll1" class="mui-scroll-wrapper">
+                                <div class="mui-scroll r-cp-c">
+                                    <ul class="mui-table-view">
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="mui-table-view-cell">
+                                            <a href="">
+                                                <div class="r-cp-c-left fl">
+                                                    <img src="img/longxia@2x.png" alt="">
+                                                </div>
+                                                <div class="r-cp-c-center fl">
+                                                    <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                                                    <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                                                    <div class="r-cp-c-center-box">
+                                                        <h3>50元代金券</h3>
+                                                        <p>周一至周四晚餐可用丨可叠加2张</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="r-cp-c-right-a">使用</a>
+                                                <div class="r-cp-c-bottom">
+                                                    <a href="#">有效期：</a>
+                                                    <span>2018年5月1日-2018年5月31日</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="item2mobile" class="mui-slider-item mui-control-content">
+                            <div id="scroll2" class="mui-scroll-wrapper">
+                                <div class="mui-scroll">
+                                    <div class="mui-loading">
+                                        <div class="mui-spinner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="item3mobile" class="mui-slider-item mui-control-content">
+                            <div id="scroll3" class="mui-scroll-wrapper">
+                                <div class="mui-scroll">
+                                    <div class="mui-loading">
+                                        <div class="mui-spinner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- <div class="r-cp-c">
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="r-cp-c-left fl">
+                            <img src="img/longxia@2x.png" alt="">
+                        </div>
+                        <div class="r-cp-c-center fl">
+                            <h5>复兴村双龙油焖大虾(振兴路店）</h5>
+                            <p>王家湾商圈 海天欢乐购2F 青年路</p>
+                            <div class="r-cp-c-center-box">
+                                <h3>50元代金券</h3>
+                                <p>周一至周四晚餐可用丨可叠加2张</p>
+                            </div>
+                        </div>
+                        <a href="#" class="r-cp-c-right-a">使用</a>
+                        <div class="r-cp-c-bottom">
+                            <a href="#">有效期：</a>
+                            <span>2018年5月1日-2018年5月31日</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+
+        </div> -->
+        <!--底部 -->
+        <footer>
+            <ul class="r_footer ">
+                <li>
+                    <a href="index.html">
+                        <i class="two-icon-hb "></i> 红包
+                    </a>
+                </li>
+                <li>
+                    <a href="coupons.html">
+                        <i class="two-icon-hq"></i> 好券
+                    </a>
+                </li>
+                <li>
+                    <a href="sc.html">
+                        <i class="two-icon-sc"></i> 商城
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <i class="two-icon-rd"></i> 热点
+                    </a>
+                </li>
+                <li>
+                    <a href="cp.html " class="w-currentColor">
+                        <i class="two-icon-hy two-icon-hy-current"></i> 会员
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+<script>
+    // window.onload = function () {
+    //     var c = document.querySelector(".r-coupon-header").querySelectorAll("li")
+    //     console.log(c)
+    //     for (var i = 0; i < c.length; i++) {
+    //         c[i].index = i;
+    //         c[i].onclick = function () {
+    //             for (var i = 0; i < c.length; i++) {
+    //                 c[i].className = ""
+    //             }
+    //             c[this.index].className = "active"
+    //         }
+
+    //     }
+    // }
+</script>
+
+</html>
